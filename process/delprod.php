@@ -22,7 +22,7 @@
                   text: "El producto se eliminó con éxito de la tienda",
                   type: "success",
                   showCancelButton: true,
-                  confirmButtonClass: "btn-danger",
+                  confirmButtonClass: "btn-success",
                   confirmButtonText: "Aceptar",
                   cancelButtonText: "Cancelar",
                   closeOnConfirm: false,

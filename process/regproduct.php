@@ -43,7 +43,7 @@
                                   text: "El producto se añadió a la tienda con éxito",
                                   type: "success",
                                   showCancelButton: true,
-                                  confirmButtonClass: "btn-danger",
+                                  confirmButtonClass: "btn-success",
                                   confirmButtonText: "Aceptar",
                                   cancelButtonText: "Cancelar",
                                   closeOnConfirm: false,

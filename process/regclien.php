@@ -24,7 +24,7 @@ if(!$nitCliente=="" && !$nameCliente=="" && !$apeCliente=="" && !$dirCliente==""
                       text: "El registro se completó con éxito, ya puedes iniciar sesión en el sistema",
                       type: "success",
                       showCancelButton: true,
-                      confirmButtonClass: "btn-danger",
+                      confirmButtonClass: "btn-success",
                       confirmButtonText: "Aceptar",
                       cancelButtonText: "Cancelar",
                       closeOnConfirm: false,

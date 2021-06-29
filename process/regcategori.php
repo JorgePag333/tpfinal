@@ -16,7 +16,7 @@ if(mysqli_num_rows($verificar)<=0){
               text: "La categoría se registró con éxito en el sistema",
               type: "success",
               showCancelButton: true,
-              confirmButtonClass: "btn-danger",
+              confirmButtonClass: "btn-success",
               confirmButtonText: "Aceptar",
               cancelButtonText: "Cancelar",
               closeOnConfirm: false,

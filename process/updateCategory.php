@@ -12,7 +12,7 @@ if(consultasSQL::UpdateSQL("categoria", "Nombre='$nameCatUp',Descripcion='$descC
           text: "Los datos de la categoría se actualizaron con éxito",
           type: "success",
           showCancelButton: true,
-          confirmButtonClass: "btn-danger",
+          confirmButtonClass: "btn-success",
           confirmButtonText: "Aceptar",
           cancelButtonText: "Cancelar",
           closeOnConfirm: false,

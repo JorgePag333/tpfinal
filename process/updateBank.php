@@ -16,7 +16,7 @@ if(consultasSQL::UpdateSQL("cuentabanco", "NumeroCuenta='$bancoCuenta', NombreBa
     text: "La cuanta bancaria se actualizo con exito",
     type: "success",
     showCancelButton: true,
-    confirmButtonClass: "btn-danger",
+    confirmButtonClass: "btn-success",
     confirmButtonText: "Aceptar",
     cancelButtonText: "Cancelar",
     closeOnConfirm: false,

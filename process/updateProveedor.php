@@ -15,7 +15,7 @@ if(consultasSQL::UpdateSQL("proveedor", "NombreProveedor='$nameProveUp',Direccio
           text: "Los datos del proveedor se actualizaron correctamente",
           type: "success",
           showCancelButton: true,
-          confirmButtonClass: "btn-danger",
+          confirmButtonClass: "btn-success",
           confirmButtonText: "Aceptar",
           cancelButtonText: "Cancelar",
           closeOnConfirm: false,

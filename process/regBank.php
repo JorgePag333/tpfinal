@@ -15,7 +15,7 @@ if(consultasSQL::InsertSQL("cuentabanco", "NumeroCuenta, NombreBanco, NombreBene
       text: "La cuenta bancaria se agregó con éxito",
       type: "success",
       showCancelButton: true,
-      confirmButtonClass: "btn-danger",
+      confirmButtonClass: "btn-success",
       confirmButtonText: "Aceptar",
       cancelButtonText: "Cancelar",
       closeOnConfirm: false,

@@ -53,7 +53,7 @@
 		    text: "Tus datos han sido actualizados con éxito",
 		    type: "success",
 		    showCancelButton: true,
-		    confirmButtonClass: "btn-danger",
+		    confirmButtonClass: "btn-success",
 		    confirmButtonText: "Aceptar",
 		    cancelButtonText: "Cancelar",
 		    closeOnConfirm: false,

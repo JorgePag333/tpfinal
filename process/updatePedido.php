@@ -13,7 +13,7 @@ if(consultasSQL::UpdateSQL("venta", "Estado='$estadPediUp'", "NumPedido='$numPed
           text: "El pedido se actualizo con éxito",
           type: "success",
           showCancelButton: true,
-          confirmButtonClass: "btn-danger",
+          confirmButtonClass: "btn-success",
           confirmButtonText: "Aceptar",
           cancelButtonText: "Cancelar",
           closeOnConfirm: false,

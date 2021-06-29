@@ -88,8 +88,9 @@ if(mysqli_num_rows($verdata)>=1){
         text: "El pedido se ha realizado con éxito",
         type: "success",
         showCancelButton: true,
-        confirmButtonClass: "btn-danger",
+        confirmButtonClass: "btn-success",
         confirmButtonText: "Aceptar",
+        cancelButtonClass: "btn-danger",
         cancelButtonText: "Cancelar",
         closeOnConfirm: false,
         closeOnCancel: false
