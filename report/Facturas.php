@@ -38,7 +38,7 @@
 
 <header class="row">
   <div class="logoholder text-center" >
-    <img src="assets/img/logo.png">
+    <img src="../assets/img/bateria1.jpg">
   </div><!--.logoholder-->
 
   <div class="me">
