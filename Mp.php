@@ -15,8 +15,9 @@ $item->quantity = 1;
 $item->unit_price = 75.56;
 $preference->items = array($item);
 $preference->save();
-?>
+
 // SDK MercadoPago.js V2
+?>
 <script src="https://sdk.mercadopago.com/js/v2"></script>
           
 <script>
@@ -32,7 +33,7 @@ $preference->save();
       },
       render: {
             container: '.cho-container', // Indica dónde se mostrará el botón de pago
-            label: 'Pagar', // Cambia el texto del botón de pago (opcional)
+            label: 'Pagar con mercadopago', // Cambia el texto del botón de pago (opcional)
       }
 });
 </script>
