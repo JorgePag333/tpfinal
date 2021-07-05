@@ -2,7 +2,7 @@
 // SDK de Mercado Pago
 require_once '/xampp/htdocs/tpfinal/Mercadopago/vendor/autoload.php';
 // Agrega credenciales
-MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
+MercadoPago\SDK::setAccessToken('TEST-6056389123923028-070523-2a4fd9782f870142ea6db9b35c75c8af-5428116');
 ?>
 <?php
 // Crea un objeto de preferencia
@@ -22,18 +22,18 @@ $preference->save();
           
 <script>
 // Agrega credenciales de SDK
-  const mp = new MercadoPago('PUBLIC_KEY', {
+  const mp = new MercadoPago('TEST-bed77968-309e-42e0-9719-7dbc8e6956b2', {
         locale: 'es-AR'
   });
 
   // Inicializa el checkout
   mp.checkout({
       preference: {
-          id: 'YOUR_PREFERENCE_ID'
+          id: '6056389123923028'
       },
       render: {
-            container: '.cho-container', // Indica dónde se mostrará el botón de pago
-            label: 'Pagar con mercadopago', // Cambia el texto del botón de pago (opcional)
+            container: 'tpfinal/Mp.php', // Indica dónde se mostrará el botón de pago
+            label: 'Pagar', // Cambia el texto del botón de pago (opcional)
       }
 });
 </script>

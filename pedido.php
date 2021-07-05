@@ -1,8 +1,15 @@
+<?php
+// SDK de Mercado Pago
+require_once '../tpfinal/Mercadopago/vendor/autoload.php';
+// Agrega credenciales
+MercadoPago\SDK::setAccessToken('TEST-6056389123923028-070523-2a4fd9782f870142ea6db9b35c75c8af-5428116');
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <title>Pedido</title>
     <?php include './inc/link.php'; ?>
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
 </head>
 <body id="container-page-index">
     <?php include './inc/navbar.php'; ?>
@@ -25,7 +32,7 @@
                         <div class="row">
                           <div class="col-xs-10 col-xs-offset-1">
                             <p class="text-center lead">Selecciona un metodo de pago</p>
-                            <img class="img-responsive center-all-contens" style="height: 20%;" src="assets/img/credit-card.png">
+                            <img class="img-responsive center-all-contens" src="assets/img/mplogo.png">
                             <p class="text-center">
                               <button class="btn btn-lg btn-raised btn-success btn-block" data-toggle="modal" data-target="#PagoModalTran">Transaccion Bancaria</button>
                             </p>
@@ -204,5 +211,23 @@
     </div>
     <div class="ResForm"></div>
     <?php include './inc/footer.php'; ?>
+    <script>
+// Agrega credenciales de SDK
+const mp = new MercadoPago('TEST-bed77968-309e-42e0-9719-7dbc8e6956b2', {
+        locale: 'es-AR'
+  });
+
+  // Inicializa el checkout
+  mp.checkout({
+      preference: {
+          id: '6056389123923028'
+      },
+      render: {
+            container: 'pedido.php', // Indica dónde se mostrará el botón de pago
+            label: 'Pagar', // Cambia el texto del botón de pago (opcional)
+      }
+});
+
+</script>
 </body>
 </html>
